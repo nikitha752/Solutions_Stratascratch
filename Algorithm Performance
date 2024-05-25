@@ -1,0 +1,7 @@
+def rating_func(row):
+    if row.clicked == 1 and row.search_results_position < 4:
+        return 3
+    elif row.clicked == 1 and row.search_results_position > 3:
+        return 2
+    elif  row.clicked == 0:
+        return 1
