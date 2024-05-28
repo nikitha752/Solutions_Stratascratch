@@ -1,3 +1,5 @@
+#Find the number of employees who received the bonus and who didn't
+
 import pandas as pd
 
 df = pd.merge(employee, bonus, left_on='id', right_on='worker_ref_id', how='left')
